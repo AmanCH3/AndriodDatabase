@@ -36,6 +36,8 @@ class AddProductActivity : AppCompatActivity() {
               task ->
               if(task.isSuccessful){
                   Toast.makeText(applicationContext,"Data saved",Toast.LENGTH_LONG).show()
+                  // if buttons saveData is click
+                  finish()
               }
               else{
                   Toast.makeText(applicationContext,task.exception?.message,Toast.LENGTH_LONG).show()
